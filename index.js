@@ -48,25 +48,17 @@ function draw_objects() {
 		startAngle: 270,
 		endAngles: [
 		{
-			angle: 180, 
+			angle: 360, 
 			color: "#FFFFFF",
 			faded_color: "#AAAAAA"
 		},
 		{
-			angle: 75,
-			color: "#DDFFDD",
-			faded_color: "#AABBAA"
+			angle: 90, 
+			color: "#AA44AA",
+			faded_color: "#AAAAAA"
 		},
-		{
-			angle: 90,
-		},
-		{
-			angle: 360,
-			color: "#660066",
-			faded_color: "#665566",
-		},
-		80
 		],
+		speed: 1
 	}, gl);
 	graph.draw();
 	
@@ -79,7 +71,7 @@ function draw_objects() {
 		speed: 3
 	}, gl2);
 	
-	graph2.draw();
+	// graph2.draw();
 	
 	
 }
