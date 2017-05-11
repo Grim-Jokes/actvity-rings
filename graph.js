@@ -35,7 +35,7 @@ Graph.prototype = {
 			self.gl.clearRect(0, 0, screen.width, screen.height);
 			
 			self.endAngles.forEach((item, index) => {
-				// self._draw_faded_ring(index);
+				self._draw_faded_ring(index);
 				self._draw_ring(index);
 				
 				var direction = self._getDirection(index);
@@ -71,6 +71,7 @@ Graph.prototype = {
 		var end_radians = 360 * (Math.PI / 180);
 		
 		this.gl.beginPath();
+		this.gl.lineWidth = 2;
 		this.gl.strokeStyle  = this.endAngles[index].faded_color;
 		this.gl.arc(this.x, this.y, this.radius + index * 10, start_radians, end_radians, false);
 		this.gl.stroke();
@@ -83,6 +84,7 @@ Graph.prototype = {
 		var radius = this.radius + index * 10;
 		
 		var path = this.gl.beginPath();
+		this.gl.lineWidth = 2;
 		this.gl.strokeStyle  = this.endAngles[index].color;
 		this.gl.arc(this.x, this.y, radius, start_radians, end_radians, false);
 		this.gl.stroke();

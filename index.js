@@ -50,12 +50,17 @@ function draw_objects() {
 		{
 			angle: 360, 
 			color: "#FFFFFF",
-			faded_color: "#AAAAAA"
+			faded_color: "#666666"
 		},
 		{
-			angle: 90, 
+			angle: 360 * 0.45, 
 			color: "#AA44AA",
-			faded_color: "#AAAAAA"
+			faded_color: "#663366"
+		},
+		{
+			angle: 360 * 0.8, 
+			color: "#44AA44",
+			faded_color: "#004400"
 		},
 		],
 		speed: 1
